@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Full Stack Developer Portfolio - Aziza">
+  <title>Aziza - Full Stack Developer</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#posts" class="nav-link">Posts</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-name" id="heroName">Aziza</h1>
+          <div class="hero-details" id="heroDetails">
+            <p class="hero-tagline">Full stack developer</p>
+            <p class="hero-description">
+              I specialize in developing sleek and functional online solutions. From polished user interfaces to robust back-end systems, I bring ideas to life in the digital realm.
+            </p>
+            <div class="hero-actions">
+              <a href="mailto:contact@Aziza.me" class="btn btn-primary">Say Hiii!</a>
+            </div>
+          </div>
+          <div class="scroll-indicator">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/Aziza" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="social-link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z" fill="currentColor"/>
+          </svg>
+        </a>
+        <a href="https://t.me/Aziza" target="_blank" rel="noopener noreferrer" aria-label="Telegram" class="social-link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z" fill="currentColor"/>
+          </svg>
+        </a>
+        <a href="https://stackoverflow.com/users/Aziza" target="_blank" rel="noopener noreferrer" aria-label="Stack Overflow" class="social-link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.986 21.865v-6.404h2.134V24H1.844v-8.539h2.13v6.404h15.012zM6.111 19.731H16.85v-2.137H6.111v2.137zm.259-4.852l10.48 2.189.451-2.07-10.478-2.187-.453 2.068zm1.359-5.056l9.705 4.53.903-1.95-9.706-4.53-.902 1.936v.014zm2.715-4.785l8.217 6.855 1.359-1.62-8.216-6.853-1.35 1.617-.01.001zM15.751 0l-1.746 1.294 6.405 8.604 1.746-1.294L15.749 0h.002z" fill="currentColor"/>
+          </svg>
+        </a>
+        <a href="https://medium.com/@Aziza" target="_blank" rel="noopener noreferrer" aria-label="Medium" class="social-link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" fill="currentColor"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title" data-animate="fade">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p data-animate="fade">
+              Hey there! I'm a full-stack developer with over 5 years of experience building web applications that people love to use. I specialize in modern JavaScript frameworks and enjoy creating seamless user experiences.
+            </p>
+            <p data-animate="fade">
+              My journey in tech started with curiosity and evolved into a passion for crafting elegant solutions to complex problems. I believe in writing clean, maintainable code and staying up-to-date with the latest technologies.
+            </p>
+            <p data-animate="fade">
+              When I'm not coding, you'll find me exploring new technologies, contributing to open source, or sharing my knowledge through blog posts and mentoring.
+            </p>
+            <div class="about-actions" data-animate="fade">
+              <a href="files/resume.pdf" class="btn btn-secondary" download>Download Resume ↓</a>
+            </div>
+          </div>
+          <div class="about-image" data-animate="fade">
+            <div class="image-wrapper">
+              <img src="assets/images/65eeff4c209bf9c7badcd8a688136363.jpg" alt="Aziza Profile Photo" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2 class="section-title" data-animate="fade">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category" data-animate="fade">
+            <h3>Frontend</h3>
+            <ul>
+              <li>Vue / Nuxt</li>
+              <li>Nuxt UI</li>
+              <li>Tailwind CSS</li>
+              <li>React</li>
+              <li>GSAP</li>
+              <li>GraphQL</li>
+            </ul>
+          </div>
+          <div class="skill-category" data-animate="fade">
+            <h3>Backend</h3>
+            <ul>
+              <li>Express.js</li>
+              <li>Nest.js</li>
+              <li>SQL / Postgresql</li>
+              <li>Drizzle ORM</li>
+              <li>Bullmq</li>
+              <li>Minio</li>
+            </ul>
+          </div>
+          <div class="skill-category" data-animate="fade">
+            <h3>Others</h3>
+            <ul>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>C</li>
+              <li>Lua</li>
+              <li>Docker</li>
+              <li>Git</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2 class="section-title" data-animate="fade">Projects</h2>
+        <div class="projects-grid">
+          <!-- Projects will be dynamically rendered -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+      <div class="container">
+        <h2 class="section-title" data-animate="fade">Experience</h2>
+        <div class="timeline">
+          <!-- Experience items will be dynamically rendered -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Posts Section -->
+    <section class="posts" id="posts">
+      <div class="container">
+        <h2 class="section-title" data-animate="fade">Recent Posts</h2>
+        <div class="posts-grid">
+          <!-- Blog posts will be dynamically rendered -->
+        </div>
+        <div class="posts-actions" data-animate="fade">
+          <a href="https://medium.com/@Aziza" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            View Blog
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 12L12 4M12 4H5.5M12 4V10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title" data-animate="fade">Get In Touch</h2>
+        <div class="contact-content">
+          <form class="contact-form" id="contactForm" data-animate="fade">
+            <div class="form-group">
+              <label for="fullname">Full Name</label>
+              <input type="text" id="fullname" name="fullname" required>
+              <span class="error-message"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+              <span class="error-message"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <span class="error-message"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-loader" style="display: none;">Sending...</span>
+            </button>
+            <div class="form-message"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Aziza. Built with passion.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+    <svg class="progress-ring" width="60" height="60">
+      <circle class="progress-ring-circle" stroke="rgba(59, 130, 246, 0.2)" stroke-width="3" fill="transparent" r="27" cx="30" cy="30"/>
+      <circle class="progress-ring-progress" stroke="rgb(59, 130, 246)" stroke-width="3" fill="transparent" r="27" cx="30" cy="30"/>
+    </svg>
+    <svg class="arrow-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <script src="js/animations.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/scroll.js"></script>
+</body>
+</html>
