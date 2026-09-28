@@ -1,237 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Full Stack Developer Portfolio - Karimov Javlonbek">
-  <title>Karimov Javlonbek - Full Stack Developer</title>
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/animations.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#111311">
+  <meta name="description" content="Javlonbek Karimov — frontend developer creating precise, fast and thoughtful digital products.">
+  <meta property="og:title" content="Javlonbek Karimov — Digital Builder">
+  <meta property="og:description" content="Selected work, experiments and product-minded frontend engineering.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://karimov0913.github.io/My-portfolio/">
+  <link rel="canonical" href="https://karimov0913.github.io/My-portfolio/">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <title>Javlonbek Karimov — Digital Builder</title>
+  <script>document.documentElement.dataset.theme=localStorage.getItem('jk-theme')||'dark';</script>
+  <link rel="stylesheet" href="css/main.css?v=20260928">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="nav" id="navbar">
-    <div class="nav-container">
-      <a href="#hero" class="nav-link">Home</a>
-      <a href="#about" class="nav-link">About</a>
-      <a href="#projects" class="nav-link">Projects</a>
-      <a href="#skills" class="nav-link">Skills</a>
-      <a href="#experience" class="nav-link">Experience</a>
-      <a href="#posts" class="nav-link">Posts</a>
-      <a href="#contact" class="nav-link">Contact</a>
-    </div>
-  </nav>
-
-  <main>
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-      <div class="container">
-        <div class="hero-content">
-          <h1 class="hero-name" id="heroName">Karimov Javlonbek</h1>
-          <div class="hero-details" id="heroDetails">
-            <p class="hero-tagline">Full stack developer</p>
-            <p class="hero-description">
-              I specialize in developing sleek and functional online solutions. From polished user interfaces to robust back-end systems, I bring ideas to life in the digital realm.
-            </p>
-            <div class="hero-actions">
-              <a href="mailto:contact@Karimov0913.me" class="btn btn-primary">Say Hiii!</a>
-            </div>
-          </div>
-          <div class="scroll-indicator">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-        </div>
-      </div>
-      <div class="social-links">
-        <a href="https://github.com/Karimov0913" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="social-link">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z" fill="currentColor"/>
-          </svg>
-        </a>
-        <a href="https://t.me/j_karimv" target="_blank" rel="noopener noreferrer" aria-label="Telegram" class="social-link">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z" fill="currentColor"/>
-          </svg>
-        </a>
-        <a href="https://stackoverflow.com/users/j_karimv" target="_blank" rel="noopener noreferrer" aria-label="Stack Overflow" class="social-link">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M18.986 21.865v-6.404h2.134V24H1.844v-8.539h2.13v6.404h15.012zM6.111 19.731H16.85v-2.137H6.111v2.137zm.259-4.852l10.48 2.189.451-2.07-10.478-2.187-.453 2.068zm1.359-5.056l9.705 4.53.903-1.95-9.706-4.53-.902 1.936v.014zm2.715-4.785l8.217 6.855 1.359-1.62-8.216-6.853-1.35 1.617-.01.001zM15.751 0l-1.746 1.294 6.405 8.604 1.746-1.294L15.749 0h.002z" fill="currentColor"/>
-          </svg>
-        </a>
-        <a href="https://medium.com/@j_karimv" target="_blank" rel="noopener noreferrer" aria-label="Medium" class="social-link">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" fill="currentColor"/>
-          </svg>
-        </a>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="about">
-      <div class="container">
-        <h2 class="section-title" data-animate="fade">About Me</h2>
-        <div class="about-content">
-          <div class="about-text">
-            <p data-animate="fade">
-              Hey there! I'm a full-stack developer with over 5 years of experience building web applications that people love to use. I specialize in modern JavaScript frameworks and enjoy creating seamless user experiences.
-            </p>
-            <p data-animate="fade">
-              My journey in tech started with curiosity and evolved into a passion for crafting elegant solutions to complex problems. I believe in writing clean, maintainable code and staying up-to-date with the latest technologies.
-            </p>
-            <p data-animate="fade">
-              When I'm not coding, you'll find me exploring new technologies, contributing to open source, or sharing my knowledge through blog posts and mentoring.
-            </p>
-            <div class="about-actions" data-animate="fade">
-              <a href="files/resume.pdf" class="btn btn-secondary" download>Download Resume ↓</a>
-            </div>
-          </div>
-          <div class="about-image" data-animate="fade">
-            <div class="image-wrapper">
-              <img src="assets/images/65eeff4c209bf9c7badcd8a688136363.jpg" alt="Karimov Javlonbek Profile Photo" loading="lazy">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="skills" id="skills">
-      <div class="container">
-        <h2 class="section-title" data-animate="fade">Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-category" data-animate="fade">
-            <h3>Frontend</h3>
-            <ul>
-              <li>Vue / Nuxt</li>
-              <li>Nuxt UI</li>
-              <li>Tailwind CSS</li>
-              <li>React</li>
-              <li>GSAP</li>
-              <li>GraphQL</li>
-            </ul>
-          </div>
-          <div class="skill-category" data-animate="fade">
-            <h3>Backend</h3>
-            <ul>
-              <li>Express.js</li>
-              <li>Nest.js</li>
-              <li>SQL / Postgresql</li>
-              <li>Drizzle ORM</li>
-              <li>Bullmq</li>
-              <li>Minio</li>
-            </ul>
-          </div>
-          <div class="skill-category" data-animate="fade">
-            <h3>Others</h3>
-            <ul>
-              <li>JavaScript</li>
-              <li>TypeScript</li>
-              <li>C</li>
-              <li>Lua</li>
-              <li>Docker</li>
-              <li>Git</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-      <div class="container">
-        <h2 class="section-title" data-animate="fade">Projects</h2>
-        <div class="projects-grid">
-          <!-- Projects will be dynamically rendered -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section class="experience" id="experience">
-      <div class="container">
-        <h2 class="section-title" data-animate="fade">Experience</h2>
-        <div class="timeline">
-          <!-- Experience items will be dynamically rendered -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Posts Section -->
-    <section class="posts" id="posts">
-      <div class="container">
-        <h2 class="section-title" data-animate="fade">Recent Posts</h2>
-        <div class="posts-grid">
-          <!-- Blog posts will be dynamically rendered -->
-        </div>
-        <div class="posts-actions" data-animate="fade">
-          <a href="https://medium.com/@j_karimv" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-            View Blog
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 12L12 4M12 4H5.5M12 4V10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-      <div class="container">
-        <h2 class="section-title" data-animate="fade">Get In Touch</h2>
-        <div class="contact-content">
-          <form class="contact-form" id="contactForm" data-animate="fade">
-            <div class="form-group">
-              <label for="fullname">Full Name</label>
-              <input type="text" id="fullname" name="fullname" required>
-              <span class="error-message"></span>
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required>
-              <span class="error-message"></span>
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" required></textarea>
-              <span class="error-message"></span>
-            </div>
-            <button type="submit" class="btn btn-primary">
-              <span class="btn-text">Send Message</span>
-              <span class="btn-loader" style="display: none;">Sending...</span>
-            </button>
-            <div class="form-message"></div>
-          </form>
-        </div>
-      </div>
-    </section>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="noise" aria-hidden="true"></div><div class="pointer-glow" aria-hidden="true"></div><div class="page-progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <div class="intro" id="intro" aria-hidden="true"><div class="intro-mark">JK<span>®</span></div><div class="intro-line"><i></i></div><p>Portfolio / 2026</p></div>
+  <header class="site-header" id="siteHeader"><nav class="glass nav-shell" aria-label="Primary navigation"><a class="brand" href="#home" aria-label="Javlonbek Karimov, home"><span>JK</span><small>Digital builder</small></a><button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button><div class="nav-links" id="navLinks"><a href="#work" data-nav data-i18n="navWork">Work</a><a href="#about" data-nav data-i18n="navAbout">About</a><a href="#capabilities" data-nav data-i18n="navStack">Capabilities</a><a href="#contact" data-nav data-i18n="navContact">Contact</a></div><div class="nav-actions"><button class="icon-btn command-trigger" id="commandTrigger" aria-label="Open command palette"><span>⌘</span><kbd>K</kbd></button><button class="text-btn" id="languageToggle" aria-label="Switch language">RU</button><button class="theme-toggle" id="themeToggle" aria-label="Switch color theme"><span></span></button></div></nav></header>
+  <main id="main">
+    <section class="hero" id="home"><div class="hero-orbit orbit-a" aria-hidden="true"></div><div class="hero-orbit orbit-b" aria-hidden="true"></div><div class="container hero-grid"><div class="hero-copy"><p class="eyebrow reveal"><span class="availability-dot"></span><span data-i18n="availability">Available for ambitious projects</span></p><h1 class="hero-title reveal" data-delay="1"><span data-i18n="heroLine1">I build precise</span><br><em data-i18n="heroLine2">digital experiences.</em></h1><p class="hero-lead reveal" data-delay="2" data-i18n="heroLead">Frontend development with product thinking, disciplined visuals and an obsession with details that make interfaces feel inevitable.</p><div class="hero-cta reveal" data-delay="3"><a class="button primary magnetic" href="#work"><span data-i18n="seeWork">Explore selected work</span><i>↘</i></a><a class="button quiet magnetic" href="https://github.com/Karimov0913" target="_blank" rel="noreferrer">GitHub <i>↗</i></a></div><div class="hero-meta reveal" data-delay="4"><div><strong>04</strong><span data-i18n="publicBuilds">public builds</span></div><div><strong>2026</strong><span data-i18n="designHorizon">design horizon</span></div><div><strong>Navoi → Seoul</strong><span data-i18n="trajectory">trajectory</span></div></div></div><div class="hero-object reveal" data-delay="2" aria-label="Interactive design object"><div class="object-halo"></div><div class="object-card glass tilt-card"><div class="object-top"><span>JK / LAB</span><span class="live">LIVE</span></div><div class="object-core"><div class="core-rings"><i></i><i></i><i></i><b>26</b></div><p>FORM × FUNCTION</p></div><div class="object-code" aria-hidden="true"><span>01&nbsp;&nbsp;observe()</span><span>02&nbsp;&nbsp;reduce_noise()</span><span>03&nbsp;&nbsp;ship_quality()</span></div><div class="object-footer"><span>41.659° N</span><span>65.678° E</span></div></div><p class="object-note"><span>↳</span><span data-i18n="objectNote">Built to feel calm.<br>Engineered to move fast.</span></p></div></div><div class="hero-marquee" aria-hidden="true"><div><span>INTERFACE ENGINEERING</span><i>✦</i><span>PRODUCT THINKING</span><i>✦</i><span>DIGITAL CRAFT</span><i>✦</i><span>INTERFACE ENGINEERING</span><i>✦</i><span>PRODUCT THINKING</span></div></div></section>
+    <section class="work section" id="work"><div class="container"><div class="section-head reveal"><div><p class="kicker">01 / <span data-i18n="selectedWork">Selected work</span></p><h2 data-i18n="workTitle">Products, not just pages.</h2></div><p data-i18n="workLead">A compact selection of real builds — each one explores a different product problem, visual language and interaction model.</p></div><div class="project-grid">
+      <article class="project-card project-featured reveal" data-project="pcforge"><div class="project-visual pcforge-visual tilt-card"><div class="browser-chrome"><i></i><i></i><i></i><span>pcforge.uz / configurator</span></div><div class="pc-layout"><aside><b>PC</b><span></span><span></span><span></span><span></span></aside><main><p>BUILD / 01</p><h3>RTX 4070<br>Creator Pro</h3><div class="parts"><i></i><i></i><i></i></div></main><div class="score"><span>Compatibility</span><strong>100</strong><small>READY</small></div></div></div><div class="project-info"><div><p class="project-index">01 · FEATURED / 2026</p><h3>PCForge UZ</h3><p data-i18n="pcforgeDesc">A complete PC configurator with compatibility logic, smart budget builds, FPS forecasting, comparison and offline support.</p><ul><li>Vanilla JS</li><li>PWA</li><li>Product system</li></ul></div><div class="project-actions"><a class="circle-link magnetic" href="https://karimov0913.github.io/pcforge-uz/" target="_blank" rel="noreferrer" aria-label="Open PCForge UZ">↗</a><button class="details-btn" data-open-project="pcforge"><span data-i18n="caseStudy">Case study</span> <i>+</i></button></div></div></article>
+      <article class="project-card reveal" data-project="iphone"><div class="project-visual iphone-visual tilt-card"><div class="phone"><div class="island"></div><div class="phone-copy"><small>TITANIUM</small><strong>Pro.<br>Beyond.</strong><i></i></div></div><span class="material">GRADE 5<br>TITANIUM</span></div><div class="project-info"><div><p class="project-index">02 / 2026</p><h3>iPhone Experience</h3><p data-i18n="iphoneDesc">A cinematic product-page experiment focused on scroll choreography, material depth and device presentation.</p><ul><li>JavaScript</li><li>Motion</li><li>Responsive</li></ul></div><div class="project-actions"><a class="circle-link magnetic" href="https://karimov0913.github.io/iphone-clone/" target="_blank" rel="noreferrer" aria-label="Open iPhone clone">↗</a><button class="details-btn" data-open-project="iphone"><span data-i18n="details">Details</span> <i>+</i></button></div></div></article>
+      <article class="project-card reveal" data-project="quantum"><div class="project-visual quantum-visual tilt-card"><div class="q-grid"></div><span class="q-label">QUANTUM<br>COMMERCE</span><div class="q-product"><i></i><b>Q/01</b></div><div class="q-price">$ 299<small>NEW OBJECT</small></div></div><div class="project-info"><div><p class="project-index">03 / 2026</p><h3>Quantum Shop</h3><p data-i18n="quantumDesc">A futuristic commerce concept balancing experimental art direction with familiar shopping patterns.</p><ul><li>HTML</li><li>CSS</li><li>Commerce UI</li></ul></div><div class="project-actions"><a class="circle-link magnetic" href="https://karimov0913.github.io/quantum-shop/" target="_blank" rel="noreferrer" aria-label="Open Quantum Shop">↗</a><button class="details-btn" data-open-project="quantum"><span data-i18n="details">Details</span> <i>+</i></button></div></div></article>
+      <article class="project-card project-manifesto reveal"><div class="manifesto-art"><img src="assets/images/65eeff4c209bf9c7badcd8a688136363.jpg" alt="Monochrome visual artwork" loading="lazy" decoding="async"><div class="manifesto-overlay"><p data-i18n="manifesto">Contrast creates focus.<br>Restraint creates identity.</p><span>VISUAL STUDY / 04</span></div></div></article>
+    </div></div></section>
+    <section class="about section" id="about"><div class="container about-grid"><div class="sticky-copy reveal"><p class="kicker">02 / <span data-i18n="aboutLabel">About</span></p><h2 data-i18n="aboutTitle">Curious by nature.<br>Systematic by choice.</h2></div><div class="about-body"><p class="about-intro reveal" data-i18n="aboutIntro">I’m Javlonbek Karimov — a frontend developer and relentless learner from Navoi, building a path toward Seoul.</p><p class="reveal" data-i18n="aboutBody">I like projects where visual taste and engineering discipline meet. My work starts with structure: understand the problem, remove the noise, establish a system, and only then add motion. The goal is never decoration — it is clarity with character.</p><div class="about-facts reveal"><div><span data-i18n="base">Base</span><strong>Navoi, Uzbekistan</strong></div><div><span data-i18n="focus">Focus</span><strong>Frontend & product UI</strong></div><div><span data-i18n="direction">Direction</span><strong>Technology × Business</strong></div><div><span data-i18n="languages">Languages</span><strong>UZ / RU / EN</strong></div></div><blockquote class="reveal"><span>“</span><p data-i18n="quote">Build the interface people understand immediately — then give them one detail they remember.</p></blockquote></div></div></section>
+    <section class="capabilities section" id="capabilities"><div class="container"><div class="section-head reveal"><div><p class="kicker">03 / <span data-i18n="capabilitiesLabel">Capabilities</span></p><h2 data-i18n="capabilitiesTitle">A small, sharp toolkit.</h2></div><p data-i18n="capabilitiesLead">Enough technology to ship ambitious ideas without losing control of performance, accessibility or maintainability.</p></div><div class="bento-grid"><article class="bento wide glass reveal"><span>01</span><h3 data-i18n="interfaceTitle">Interface engineering</h3><p data-i18n="interfaceText">Semantic HTML, scalable CSS, modern JavaScript, responsive systems and component-level thinking.</p><div class="tech-line"><b>HTML</b><b>CSS</b><b>JavaScript</b><b>React</b><b>Vue</b></div></article><article class="bento glass reveal"><span>02</span><h3 data-i18n="motionTitle">Motion with purpose</h3><p data-i18n="motionText">Scroll narratives, micro-interactions and transitions designed around hierarchy — not spectacle.</p><div class="motion-demo"><i></i><i></i><i></i></div></article><article class="bento glass reveal"><span>03</span><h3 data-i18n="productTitle">Product thinking</h3><p data-i18n="productText">User flows, information architecture, constraints, edge cases and design decisions that survive real usage.</p><div class="flow-demo"><i></i><b></b><i></i><b></b><i></i></div></article><article class="bento wide glass reveal"><span>04</span><h3 data-i18n="qualityTitle">Quality by default</h3><p data-i18n="qualityText">Performance budgets, keyboard access, reduced motion, progressive enhancement and honest UX.</p><div class="quality-bars"><label>Performance <i style="--value:96%"></i></label><label>Accessibility <i style="--value:94%"></i></label><label>Responsive <i style="--value:100%"></i></label></div></article></div></div></section>
+    <section class="process section"><div class="container"><div class="section-head reveal"><div><p class="kicker">04 / <span data-i18n="processLabel">Process</span></p><h2 data-i18n="processTitle">From signal to system.</h2></div></div><ol class="process-list"><li class="reveal"><span>01</span><h3 data-i18n="step1">Observe</h3><p data-i18n="step1Text">Understand context, audience and the real constraint.</p></li><li class="reveal"><span>02</span><h3 data-i18n="step2">Shape</h3><p data-i18n="step2Text">Build hierarchy, direction and a visual system.</p></li><li class="reveal"><span>03</span><h3 data-i18n="step3">Engineer</h3><p data-i18n="step3Text">Turn the system into responsive, accessible code.</p></li><li class="reveal"><span>04</span><h3 data-i18n="step4">Refine</h3><p data-i18n="step4Text">Test details, remove friction and ship with confidence.</p></li></ol></div></section>
+    <section class="contact section" id="contact"><div class="container contact-shell glass reveal"><div class="contact-copy"><p class="kicker">05 / <span data-i18n="contactLabel">Contact</span></p><h2><span data-i18n="contactTitle">Have an idea worth</span><br><em data-i18n="contactAccent">building properly?</em></h2><p data-i18n="contactText">Tell me what you are creating, where it is stuck, and what a strong result would look like.</p><div class="contact-links"><a href="mailto:djaviddjavidov9@gmail.com">djaviddjavidov9@gmail.com ↗</a><a href="https://t.me/j_karimv" target="_blank" rel="noreferrer">Telegram / @j_karimv ↗</a></div></div><form class="contact-form" id="contactForm"><label><span data-i18n="yourName">Your name</span><input id="name" name="name" autocomplete="name" required placeholder="Name"></label><label><span data-i18n="yourEmail">Your email</span><input id="email" name="email" type="email" autocomplete="email" required placeholder="name@company.com"></label><label><span data-i18n="projectBrief">Project brief</span><textarea id="message" name="message" rows="4" minlength="10" required placeholder="What are we building?"></textarea></label><button class="button primary magnetic" type="submit"><span data-i18n="startConversation">Start a conversation</span><i>↗</i></button><p class="form-note" id="formNote" data-i18n="mailtoNote">Opens your email client — no fake “message sent” screen.</p></form></div></section>
   </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 Karimov Javlonbek. Built with passion.</p>
-    </div>
-  </footer>
-
-  <!-- Scroll to Top Button -->
-  <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
-    <svg class="progress-ring" width="60" height="60">
-      <circle class="progress-ring-circle" stroke="rgba(59, 130, 246, 0.2)" stroke-width="3" fill="transparent" r="27" cx="30" cy="30"/>
-      <circle class="progress-ring-progress" stroke="rgb(59, 130, 246)" stroke-width="3" fill="transparent" r="27" cx="30" cy="30"/>
-    </svg>
-    <svg class="arrow-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </button>
-
-  <script src="js/animations.js"></script>
-  <script src="js/form.js"></script>
-  <script src="js/scroll.js"></script>
+  <footer class="footer"><div class="container"><a class="brand" href="#home"><span>JK</span><small>Digital builder</small></a><p>© <span id="year">2026</span> Javlonbek Karimov</p><div><a href="https://github.com/Karimov0913" target="_blank" rel="noreferrer">GitHub</a><a href="https://t.me/j_karimv" target="_blank" rel="noreferrer">Telegram</a><a href="#home">Top ↑</a></div></div></footer>
+  <dialog class="project-dialog" id="projectDialog"><button class="dialog-close" data-close-dialog aria-label="Close project details">×</button><div id="dialogContent"></div></dialog>
+  <div class="command" id="commandPalette" hidden><button class="command-backdrop" data-close-command aria-label="Close command palette"></button><div class="command-box glass" role="dialog" aria-modal="true" aria-label="Command palette"><div class="command-search"><span>⌕</span><input id="commandInput" placeholder="Type a command…" autocomplete="off"><kbd>ESC</kbd></div><div class="command-results" id="commandResults"></div><p><span>↑↓ Navigate</span><span>↵ Open</span></p></div></div>
+  <script src="js/app.js?v=20260928" defer></script>
 </body>
 </html>
